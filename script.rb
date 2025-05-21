@@ -2,7 +2,8 @@ def bubble_sort(arr)
 number_of_swaps = "No interaction yet"
 while number_of_swaps != 0
   number_of_swaps = 0
-  (0...arr.length - 1).each do |index_i|
+  k = 0 # Number of interactions, used to optimize the algorithm
+  (0...arr.length - 1 - k).each do |index_i|
     index_j = index_i + 1
     if is_element_one_bigger?(arr[index_i], arr[index_j])
       swap_elements(index_i, index_j, arr)
@@ -10,6 +11,7 @@ while number_of_swaps != 0
     end
   end
   p arr
+  k += 1
 end
 end
 
@@ -27,4 +29,4 @@ def swap_elements(index_i, index_j, arr)
   arr
 end
 
-bubble_sort([4,3,78,2,0,2])
+bubble_sort([4,3,78,2,56, 78, -3, -2, 100, 10000, 3123, 23, 6, 2, 0, 2])

@@ -29,4 +29,4 @@ def swap_elements(index_i, index_j, arr)
   arr
 end
 
-bubble_sort([4,3,78,2,56, 78, -3, -2, 100, 10000, 3123, 23, 6, 2, 0, 2])
+bubble_sort([4, 3, 78, 2, 56, 78, -3, -2, 100, 10000, 3123, 23, 6, 2, 0, 2])
